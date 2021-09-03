@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css";
+
+
+</head>
+
+<body>
+    <div class="container">
+            <form action="" method="GET">
+                <nav>
+                    <a href="payment_form.html">HOME</a>
+                    <a href="QUERIES.html">QUERIES</a>
+                    <hr>
+                </nav>
+                <h1 class="mainheading">Payment Form</h1>
+                <hr>
+                <h2>User Information</h2>
+                <p> Name:
+                    <input type="text" required name="name" placeholder="Shaktiman">
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        Male<input type="radio" name="Gender" id="Male" value="M" required> Female<input type="radio" name="Gender"id="Female" value="F" required>
+                    </fieldset>
+                </p>
+                
+                <p>
+                    Address:
+                    <textarea placeholder="Enter address" name="address"  id="Address" value="Address"  required>
+                    </textarea>
+                </p>
+                <p>
+                    Email:
+                    <input type="email" name="email"  id="email" placeholder="email"  required>
+                </p>
+                <p>
+                    Pincode:
+                    <input type="number" name="Pincode"  id="Pincode" placeholder="123456"  required>
+                </p>
+
+                <h2>
+                    Payment Information;
+                </h2>
+                <p class="special">CardType:
+                    <select name="cardtype" id="cardtype">
+                    <option value="">---Select_type---</option>
+                    <option value="VISA">VISA</option>
+                    <option value="RUPAY">RUPAY</option>
+                </select>
+                </p>
+        
+                <p>CARDNUMBER<Input type="number" name="CARDNUMBER" id="CARDNUMBER" placeholder="123456789123"></p>
+                <p>CVV<input type="password" name="CVV" placeholder="123"></p>
+                <p>Expiration Date
+                    <input type="date" name="Expiration" id="Expiration" required>
+                </p>
+
+                
+                <input type="submit" value="Pay Now">
+           
+            
+            </form>
+    </div>
+</body>
+</html>
